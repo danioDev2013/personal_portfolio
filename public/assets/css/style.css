@@ -1,0 +1,891 @@
+/*Custom CSS*/
+/*scroll smoothly for the entire page*/
+* {
+    scroll-behavior: smooth;
+    font-family: 'PT Serif', serif;
+}
+.main {
+    padding: 0%;
+}
+/*the hyperlinks color, important
+to override the bootstrap components, also scroll color*/
+a,
+.email:hover{
+    color: rgb(190, 152, 221) !important;
+}
+
+/*hyperlinks color when hovered over*/
+a:hover {
+    color: rgba(152, 103, 192, 0.432);
+}
+
+/*creates the background at top*/
+.backgroundImg {
+    background-image: url("../images/snow.png");  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: absolute; 
+    z-index: -10;
+    padding-bottom: 5rem;
+}
+
+
+
+                                /*navbar*/
+#nav {
+    padding: 1%;
+}
+/*my initials on the navbar, font from google*/
+.navbar-brand {
+    background-color: rgb(190, 152, 221);
+    color: rgb(255, 255, 255) !important;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0%;
+    border-radius: 50%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 8px;
+}
+#navbar-brand {
+    padding: 2%;
+}
+
+#nav > article > ul > li > a > button {
+    padding: 10%;
+    font-size: 8px;
+    margin-right: 10px;
+}
+.more,
+.moreBtn {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: rgb(190, 152, 221);
+    padding: 10px;
+    border-radius: 2%;
+    display: inline-block;
+    border: none;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+}
+    .more:hover {
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.4s ease 0s;
+    } 
+
+h1,
+h2 {
+    color: rgb(190, 152, 221);
+    text-align: center;
+}
+
+                            /*Title on page*/
+#title {
+    font-family: 'PT Serif', serif;
+    position: relative;
+    font-size: 2.8rem;
+    text-align: center;
+    color: rgb(190, 152, 221);
+    margin-top: 7rem;
+}
+#site-header > section > article:nth-child(1){
+    padding: 0;
+}
+
+                            /*scroll*/
+/* arrow animations, size and centering*/
+#scroll {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+@-webkit-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateX(0);
+    }
+    40% {
+      -webkit-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -webkit-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  @-moz-keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+    40% {
+      -ms-transform: translateY(-30px);
+      transform: translateY(-30px);
+    }
+    60% {
+      -ms-transform: translateY(-15px);
+      transform: translateY(-15px);
+    }
+  }
+  
+  .bounce {
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+  }
+
+  .about-title-2 {
+	font-size: 2.3em;
+	margin: 0.67em 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+                                    /*about area*/
+
+.abt-me {
+    background-color: rgb(190, 152, 221);
+    color: white;
+}
+#about-me > h4.about-title {
+    padding-top: 1rem;
+    font-family: 'Shadows Into Light Two', cursive;
+}
+#about-me > h4.about-title-2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+#about-text {
+    font-size: 12px;
+}
+/*image border around it*/
+#img-me {
+    border: 1px solid rgb(229, 229, 230);
+    padding: 5px;
+    margin: 10px;
+    width: 200px;
+}
+
+
+
+                                /*Projects*/
+#about > section.works.scroll {
+    padding: 10px;
+}
+#proj-title {
+    margin: 0;
+}
+.block {
+    box-shadow: 4px 4px 7px #333;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10%;
+}
+.works {
+    padding-bottom: 3%;
+    background: #fff;
+}
+.works-thumb {
+    height: 200px;
+}
+#about > section.works.scroll > article > div > div > div {
+    margin-top: 1rem;
+}
+
+#work-1 {
+    background: url("../images/lostNoMore.png") no-repeat 100%;
+    background-size: cover;
+}
+
+#work-2 {
+    background: url("../images/whatsinmybelly.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-3 {
+    background: url("../images/techBabble.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-4 {
+    background: url("../images/note.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-5 {
+    background: url("../images/weather.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-6 {
+    background: url("../images/sched.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-7 {
+    background: url("../images/horiseon.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-8 {
+    background: url("../images/quiz.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-9 {
+    background: url("../images/password.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-10 {
+    background: url("../images/ecommerce.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-11 {
+    background: url("../images/employee.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-12 {
+    background: url("../images/team.png") no-repeat 100%;
+    background-size: cover;
+}
+.block::after, .block::before {
+    content: '';
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.block::after {
+    left: -50%;
+    transition: 0.5s;
+}
+.block::before {
+    right: -50%;
+    transition: 0.5s;
+}
+.block:hover:after {
+    left: 0;
+}
+.block:hover:before {
+    right: 0;
+}
+.works-caption {
+    text-align: center;
+    font-family: "Lato", serif;
+    font-size: .5rem;
+    letter-spacing: 0.4rem;
+    position: absolute;
+    border-radius: 10px;
+    display: block;
+    padding: 18px 2px;
+    width: 65%;
+    left: 20%;
+    top:-40%;
+    z-index: 2;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: top 0.5s;
+}
+.works-caption2 {
+    text-align: center;
+    font-family: "Lato", serif;
+    font-size: .3rem;
+    letter-spacing: 0.3rem;
+    position: absolute;
+    border-radius: 5px;
+    display: block;
+    padding: 13px 2px;
+    width: 25%;
+    left: 20%;
+    top:-60%;
+    z-index: 1;
+    transition: top 0.5s;
+}
+.live {
+    margin-top: 15%;
+    margin-left: 2%;
+}
+
+.Github2 {
+    margin-left: 20%;
+}
+.block:hover .works-caption2 {
+    top: 33%;
+}
+.block:hover .works-caption {
+    top: 33%;
+}
+
+.works h2 {
+    margin: 7% 0;
+}
+#about > section.works.scroll > article > div > div.justify-content-center.d-flex.col-md-4.col-sm-6.col-xs-12 > button {
+    padding: 1%;
+    font-size: 12px;
+}
+
+
+/*center the email on the footer*/
+#emailFooter {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+                                    /*footer style*/
+.custom-footer {
+    background-color:#26272b;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color:#737373;
+    position: relative;
+    padding-bottom: 20px;
+}
+#about > footer {
+    padding-top: 3%;
+}
+#footer-title {
+    font-size: 1.2rem;
+    margin-top: 10%;
+}
+.contact {
+    margin: 5% 0;
+}
+.hire {
+    font-size: 12px;
+}
+#touch {
+    font-size: 7px;
+    padding: 2%;
+    margin-right: 68%;
+}
+.fa-paper-plane {
+    padding-right: 3px;
+
+}
+.copyright-text,
+.contact-text {
+    font-size: 12px;
+}
+
+#about > footer > div > div:nth-child(1),
+#about > footer > div > div:nth-child(1),
+#about > footer > div > div.col-md-6 > div.contacts-data.col-12 {
+    padding: 0%;
+}
+#about > footer > div > div:nth-child(1) > div.contacts-data.text-center {
+    padding-bottom: 10px;
+}
+/*social icons on footer style*/
+.social-icons li{
+    display: inline-block;
+    padding: 2px;
+  }
+      .social-icons a {
+          display: inline-block;
+          text-align: center;
+      }
+      .copyright-text,
+      .social-icons,
+      .abtMe {
+          text-align: center;
+          padding: 0 4px 0 0;
+      }
+.fa-2x {
+    font-size: 1.0em !important;
+}
+#about > footer > div.col-md-6 > div:nth-child(1) > a {
+    font-size: 12px;
+}
+.copyright-text {
+    padding: 3px;
+    margin: 0;
+}
+.custom-paragraph {
+    text-align: center;
+}
+
+/*media queries*/
+
+
+/*screens 300px to 480*/
+@media screen 
+and (min-width: 300px)
+and (max-width: 480px) {
+    #about-text {
+        margin: 5%;
+        font-size: 15px;
+    }
+    .live {
+        margin-top: 20%;
+        margin-left: 2%;
+    }
+    .Github {
+        margin-left: 35%;
+    }
+    .Github2 {
+        margin-left: 20%;
+    }
+}
+/*screens 481px and 600*/
+@media screen
+and (min-width: 481px)
+and (max-width: 575px) {
+    #title {
+        font-size: 4rem;
+        padding-top: 20%;
+        margin-top: 1%;
+    }
+    #scroll {
+        margin-top: 10%;
+        font-size: 2rem;
+    }
+    #parallax {
+        padding-bottom: 15%;
+    }
+    #about-me > h4.about-title {
+        font-size: 1.5rem;
+    }
+    .about-title-2 {
+        font-size: 1.8rem;
+    }
+    #img-me {
+        width: 150px;
+    }
+    #about-text {
+        margin: 2% 10% 10% 10%;
+        font-size: 12px;
+    }
+    .works-thumb {
+        height: 300px;
+    }
+    .fa-2x, 
+    #footer-title {
+        font-size: 1.5rem !important;
+    }
+    .contact-text {
+        font-size: 1rem;
+    }
+    #about > footer > div {
+        padding-top: 20px;
+    }
+    #footer-title {
+        margin-top: 2%;
+    }
+    .live {
+        margin-top: 18%;
+        margin-left: 3%;
+    }
+    .Github {
+        margin-left: 38%;
+    }
+    .Github2 {
+        margin-left: 22%;
+    }
+   
+}
+/*screens 576px and 768*/
+@media screen
+and (min-width: 576px)
+and (max-width: 768px) {
+    #about > section.works.scroll > article > div > div:nth-child(3) {
+        margin-left: 25%;
+    }
+    #title {
+        font-size: 5.3rem;
+        padding-top: 20%;
+        margin-top: 1%;
+    }
+    #scroll {
+        margin-top: 15%;
+        font-size: 3rem;
+    }
+    #parallax {
+        padding-bottom: 15%;
+    }
+    #about-me > h4.about-title {
+        font-size: 1.5rem;
+    }
+    .about-title-2 {
+        font-size: 1.8rem;
+    }
+    #img-me {
+        width: 200px;
+    }
+    #about-text {
+        margin: 2% 14% 10% 14%;
+        font-size: 14px;
+    }
+    .works-thumb {
+        height: 300px;
+    }
+    .fa-2x, 
+    #footer-title {
+        font-size: 2rem !important;
+    }
+    #footer-title {
+        margin-top: 2%;
+    }
+    .contact-text {
+        font-size: 1rem;
+    }
+    #about > footer > div {
+        padding-top: 4px;
+        margin-top: 1%;
+    }
+    #proj-title > u {
+        font-size: 3rem;
+        padding: 5px;
+    }
+    #nav > article > ul > li > a > button {
+        font-size: 12px;
+    }
+    #navbar-brand {
+        font-size: 14px;
+    }
+
+}
+/*screens 769px and 900*/
+@media screen
+and (min-width: 769px)
+and (max-width: 900px) {
+    #title {
+        font-size: 7rem;
+        padding-top: 20%;
+        margin-top: 1%;
+    }
+    #scroll {
+        margin-top: 15%;
+        font-size: 3rem;
+    }
+    #parallax {
+        padding-bottom: 5%;
+    }
+    #about-me > h4.about-title {
+        font-size: 2rem;
+    }
+    #about-me > h4.about-title-2 {
+        font-size: 2.2rem;
+    }
+    #img-me {
+        width: 200px;
+    }
+    #about-text {
+        margin: 2% 17% 10% 17%;
+        font-size: 15px;
+    }
+    .works-thumb {
+        height: 300px;
+    }
+    .fa-2x, 
+    #footer-title {
+        font-size: 2rem !important;
+    }
+    #footer-title {
+        margin-top: 2%;
+    }
+    .contact-text {
+        font-size: 1rem;
+    }
+    #about > footer > div {
+        padding-top: 4px;
+        margin-top: 1%;
+    }
+    #proj-title > u {
+        font-size: 3rem;
+        padding: 5px;
+    }
+    #nav > article > ul > li > a > button {
+        font-size: 12px;
+    }
+    #navbar-brand {
+        font-size: 14px;
+    }
+    .works-caption {
+        font-size: .5rem;
+        padding: 14px 2.3px;
+        width: 80%;
+        left: 11%;  
+    }
+    .works-caption2 {
+        font-size: .3rem;
+        padding: 12px 4px;
+        width: 30%;
+        left: 20%;
+    }
+}
+/*screens 901px and 1024*/
+@media screen
+and (min-width: 901px)
+and (max-width: 1389px) {
+    #title {
+        font-size: 7rem;
+        padding-top: 10%;
+        margin-top: 1%;
+    }
+    #scroll {
+        margin-top: 15%;
+        font-size: 3rem;
+    }
+    #parallax {
+        padding-bottom: 5%;
+    }
+    #about-me > h4.about-title {
+        font-size: 2rem;
+    }
+    #about-me > h4.about-title-2 {
+        font-size: 2.2rem;
+    }
+    #img-me {
+        width: 200px;
+    }
+    #about-text {
+        margin: 2% 20% 10% 20%;
+        font-size: 18px;
+    }
+    .works-thumb {
+        height: 300px;
+    }
+    .fa-2x, 
+    #footer-title {
+        font-size: 2rem !important;
+    }
+    #footer-title {
+        margin-top: 2%;
+    }
+    .contact-text {
+        font-size: 1rem;
+    }
+    #about > footer > div {
+        padding-top: 4px;
+        margin-top: 1%;
+    }
+    #proj-title > u {
+        font-size: 3rem;
+        padding: 5px;
+    }
+    #nav > article > ul > li > a > button {
+        font-size: 15px;
+    }
+    #navbar-brand {
+        font-size: 18px;
+        padding: 14px;
+    }
+    #about > section.works.scroll > article > div {
+        padding: 40px 0px;
+    }
+    #about > section.works.scroll > article > div > div.justify-content-center.d-flex.col-12 {
+        padding: 15px;
+    }
+    .works-caption {
+        font-size: 1rem;
+        padding: 14px 2.3px;
+        width: 70%;
+        left: 11%;  
+    }
+    .works-caption2 {
+        font-size: .5rem;
+        padding: 12px 2px;
+        width: 20%;
+        left: 20%;
+    }
+    .live {
+        margin-top: 20%;
+        margin-left: -1%;
+    }
+    .Github {
+        margin-left: 35%;
+    }
+    .Github2 {
+        margin-left: 20%;
+    }
+    .live {
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+    
+    .Github2 {
+        margin-left: 20%;
+    }
+}
+/*screen 1201px and bigger, x-large*/
+@media screen 
+and (min-width: 1390px)
+and (max-width: 1569px) {
+    #title {
+        font-size: 9rem;
+        padding-top: 9%;
+        margin-top: 10px;
+    }
+    #scroll {
+        margin-top: 5%;
+        font-size: 4rem;
+    }
+    #parallax {
+        padding-bottom: 4%;
+    }
+    #about-me > h4.about-title {
+        font-size: 2rem;
+    }
+    #about-me > h4.about-title-2 {
+        font-size: 2.2rem;
+    }
+    #img-me {
+        width: 200px;
+    }
+    #about-text {
+        margin: 2% 20% 10% 20%;
+        font-size: 18px;
+    }
+    .works-thumb {
+        height: 300px;
+    }
+    .fa-2x, 
+    #footer-title {
+        font-size: 2rem !important;
+    }
+    #footer-title {
+        margin-top: 2%;
+    }
+    .contact-text {
+        font-size: 1rem;
+    }
+    #about > footer > div {
+        padding-top: 4px;
+        margin-top: 1%;
+    }
+    #proj-title > u {
+        font-size: 3rem;
+        padding: 5px;
+    }
+    #nav > article > ul > li > a > button {
+        font-size: 15px;
+    }
+    #navbar-brand {
+        font-size: 18px;
+        padding: 14px;
+    }
+    #about > section.works.scroll > article > div {
+        padding: 40px 0px;
+    }
+    #about > section.works.scroll > article > div > div.justify-content-center.d-flex.col-12 {
+        padding: 15px;
+    }
+    .works-caption {
+        font-size: .5rem;
+        padding: 14px 2.3px;
+        width: 80%;
+        left: 11%;  
+    }
+    .works-caption2 {
+        font-size: .3rem;
+        padding: 12px 4px;
+        width: 30%;
+        left: 20%;
+    }
+    .live {
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+    
+    .Github2 {
+        margin-left: 20%;
+    }
+}
+@media screen
+and (min-width: 1570px)
+and (max-width: 2500px) {
+    #title {
+        font-size: 12rem;
+        padding-top: 9%;
+        margin-top: 10px;
+    }
+    #scroll {
+        margin-top: 5%;
+        font-size: 4rem;
+    }
+    #parallax {
+        padding-bottom: 4%;
+    }
+    #about-me > h4.about-title {
+        font-size: 2rem;
+    }
+    #about-me > h4.about-title-2 {
+        font-size: 2.2rem;
+    }
+    #img-me {
+        width: 200px;
+    }
+    #about-text {
+        margin: 2% 25% 10% 25%;
+        font-size: 19px;
+    }
+    .works-thumb {
+        height: 300px;
+    }
+    .fa-2x, 
+    #footer-title {
+        font-size: 2rem !important;
+    }
+    #footer-title {
+        margin-top: 2%;
+    }
+    .contact-text {
+        font-size: 1rem;
+    }
+    #about > footer > div {
+        padding-top: 4px;
+        margin-top: 1%;
+    }
+    #proj-title > u {
+        font-size: 3rem;
+        padding: 5px;
+    }
+    #nav > article > ul > li > a > button {
+        font-size: 15px;
+    }
+    #navbar-brand {
+        font-size: 18px;
+        padding: 14px;
+    }
+    #about > section.works.scroll > article > div {
+        padding: 40px 0px;
+    }
+    #about > section.works.scroll > article > div > div.justify-content-center.d-flex.col-12 {
+        padding: 15px;
+    }
+    .live {
+        margin-top: 15%;
+        margin-left: 2%;
+    }
+    
+    .Github2 {
+        margin-left: 20%;
+    }
+}
